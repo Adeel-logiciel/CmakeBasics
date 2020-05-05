@@ -143,6 +143,32 @@ helloWorld/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloWorld.dir/build.make CMakeFiles/helloWorld.dir/build
 .PHONY : helloWorld/fast
 
+#=============================================================================
+# Target rules for targets named helloWorldStatic
+
+# Build rule for target.
+helloWorldStatic: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 helloWorldStatic
+.PHONY : helloWorldStatic
+
+# fast build rule for target.
+helloWorldStatic/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloWorldStatic.dir/build.make CMakeFiles/helloWorldStatic.dir/build
+.PHONY : helloWorldStatic/fast
+
+#=============================================================================
+# Target rules for targets named helloWorldShared
+
+# Build rule for target.
+helloWorldShared: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 helloWorldShared
+.PHONY : helloWorldShared
+
+# fast build rule for target.
+helloWorldShared/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloWorldShared.dir/build.make CMakeFiles/helloWorldShared.dir/build
+.PHONY : helloWorldShared/fast
+
 helloWorld.o: helloWorld.cpp.o
 
 .PHONY : helloWorld.o
@@ -150,6 +176,8 @@ helloWorld.o: helloWorld.cpp.o
 # target to build an object file
 helloWorld.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloWorld.dir/build.make CMakeFiles/helloWorld.dir/helloWorld.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloWorldStatic.dir/build.make CMakeFiles/helloWorldStatic.dir/helloWorld.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloWorldShared.dir/build.make CMakeFiles/helloWorldShared.dir/helloWorld.cpp.o
 .PHONY : helloWorld.cpp.o
 
 helloWorld.i: helloWorld.cpp.i
@@ -159,6 +187,8 @@ helloWorld.i: helloWorld.cpp.i
 # target to preprocess a source file
 helloWorld.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloWorld.dir/build.make CMakeFiles/helloWorld.dir/helloWorld.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloWorldStatic.dir/build.make CMakeFiles/helloWorldStatic.dir/helloWorld.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloWorldShared.dir/build.make CMakeFiles/helloWorldShared.dir/helloWorld.cpp.i
 .PHONY : helloWorld.cpp.i
 
 helloWorld.s: helloWorld.cpp.s
@@ -168,6 +198,8 @@ helloWorld.s: helloWorld.cpp.s
 # target to generate assembly for a file
 helloWorld.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloWorld.dir/build.make CMakeFiles/helloWorld.dir/helloWorld.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloWorldStatic.dir/build.make CMakeFiles/helloWorldStatic.dir/helloWorld.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloWorldShared.dir/build.make CMakeFiles/helloWorldShared.dir/helloWorld.cpp.s
 .PHONY : helloWorld.cpp.s
 
 # Help Target
@@ -179,6 +211,8 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... helloWorld"
+	@echo "... helloWorldShared"
+	@echo "... helloWorldStatic"
 	@echo "... helloWorld.o"
 	@echo "... helloWorld.i"
 	@echo "... helloWorld.s"

@@ -14,7 +14,9 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1,
+						2
 					]
 				}
 			],
@@ -29,7 +31,9 @@
 					"name" : "helloWorld",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1,
+						2
 					]
 				}
 			],
@@ -38,8 +42,22 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "helloWorld::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-helloWorld-Debug-dbe326c934685e84ac44.json",
+					"jsonFile" : "target-helloWorld-Debug-0d274f720a3291857450.json",
 					"name" : "helloWorld",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "helloWorldShared::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-helloWorldShared-Debug-d1207915f80223a69c29.json",
+					"name" : "helloWorldShared",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "helloWorldStatic::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-helloWorldStatic-Debug-609f1b66ea7f11e697d1.json",
+					"name" : "helloWorldStatic",
 					"projectIndex" : 0
 				}
 			]

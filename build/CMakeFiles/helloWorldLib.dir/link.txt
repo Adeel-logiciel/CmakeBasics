@@ -1,0 +1,1 @@
+/bin/clang++-9 -fPIC -g  -shared -Wl,-soname,libhelloWorldLib.so -o libhelloWorldLib.so CMakeFiles/helloWorldLib.dir/helloWorld.cpp.o 
