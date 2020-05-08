@@ -1,5 +1,0 @@
-/home/mahussain/Logiciel/Cmake/CmakeHelloWorld/build/CMakeFiles/rebuild_cache.dir
-/home/mahussain/Logiciel/Cmake/CmakeHelloWorld/build/CMakeFiles/edit_cache.dir
-/home/mahussain/Logiciel/Cmake/CmakeHelloWorld/build/CMakeFiles/helloWorld.dir
-/home/mahussain/Logiciel/Cmake/CmakeHelloWorld/build/CMakeFiles/helloWorldStatic.dir
-/home/mahussain/Logiciel/Cmake/CmakeHelloWorld/build/CMakeFiles/helloWorldShared.dir

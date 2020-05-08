@@ -4,5 +4,17 @@
     "command": "c++ -IhelloWorldMeson@exe -I. -I.. -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -MD -MQ 'helloWorldMeson@exe/helloWorld.cpp.o' -MF 'helloWorldMeson@exe/helloWorld.cpp.o.d' -o 'helloWorldMeson@exe/helloWorld.cpp.o' -c ../helloWorld.cpp",
     "file": "../helloWorld.cpp",
     "output": "helloWorldMeson@exe/helloWorld.cpp.o"
+  },
+  {
+    "directory": "/home/mahussain/Logiciel/Cmake/CmakeHelloWorld/buildmeson",
+    "command": "c++ -IhelloWorldMesonStatic@sta -I. -I.. -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -fPIC -MD -MQ 'helloWorldMesonStatic@sta/helloWorld.cpp.o' -MF 'helloWorldMesonStatic@sta/helloWorld.cpp.o.d' -o 'helloWorldMesonStatic@sta/helloWorld.cpp.o' -c ../helloWorld.cpp",
+    "file": "../helloWorld.cpp",
+    "output": "helloWorldMesonStatic@sta/helloWorld.cpp.o"
+  },
+  {
+    "directory": "/home/mahussain/Logiciel/Cmake/CmakeHelloWorld/buildmeson",
+    "command": "c++ -IhelloWorldMesonShared@sha -I. -I.. -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -fPIC -MD -MQ 'helloWorldMesonShared@sha/helloWorld.cpp.o' -MF 'helloWorldMesonShared@sha/helloWorld.cpp.o.d' -o 'helloWorldMesonShared@sha/helloWorld.cpp.o' -c ../helloWorld.cpp",
+    "file": "../helloWorld.cpp",
+    "output": "helloWorldMesonShared@sha/helloWorld.cpp.o"
   }
 ]

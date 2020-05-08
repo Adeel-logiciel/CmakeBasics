@@ -14,9 +14,18 @@ rule cpp_COMPILER
 
 # Rules for linking.
 
+rule STATIC_LINKER
+ command = rm -f $out && gcc-ar $LINK_ARGS $out $in
+ description = Linking static target $out
+
 rule cpp_LINKER
  command = c++ $ARGS -o $out $in $LINK_ARGS
  description = Linking target $out
+
+rule SHSYM
+ command = /home/mahussain/.local/bin/meson --internal symbolextractor /home/mahussain/Logiciel/Cmake/CmakeHelloWorld/buildmeson $in $IMPLIB $out $CROSS
+ description = Generating symbol file $out
+ restat = 1
 
 # Other rules
 
@@ -42,6 +51,23 @@ build helloWorldMeson@exe/helloWorld.cpp.o: cpp_COMPILER ../helloWorld.cpp
 
 build helloWorldMeson: cpp_LINKER helloWorldMeson@exe/helloWorld.cpp.o
  LINK_ARGS = -Wl,--as-needed -Wl,--no-undefined
+
+build helloWorldMesonStatic@sta/helloWorld.cpp.o: cpp_COMPILER ../helloWorld.cpp
+ DEPFILE = helloWorldMesonStatic@sta/helloWorld.cpp.o.d
+ ARGS = -IhelloWorldMesonStatic@sta -I. -I.. -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -fPIC
+
+build libhelloWorldMesonStatic.a: STATIC_LINKER helloWorldMesonStatic@sta/helloWorld.cpp.o
+ LINK_ARGS = csrD
+
+build helloWorldMesonShared@sha/helloWorld.cpp.o: cpp_COMPILER ../helloWorld.cpp
+ DEPFILE = helloWorldMesonShared@sha/helloWorld.cpp.o.d
+ ARGS = -IhelloWorldMesonShared@sha -I. -I.. -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -fPIC
+
+build helloWorldMesonShared@sha/libhelloWorldMesonShared.so.symbols: SHSYM libhelloWorldMesonShared.so
+ IMPLIB = libhelloWorldMesonShared.so
+
+build libhelloWorldMesonShared.so: cpp_LINKER helloWorldMesonShared@sha/helloWorld.cpp.o
+ LINK_ARGS = -Wl,--as-needed -Wl,--no-undefined -shared -fPIC -Wl,--start-group -Wl,-soname,libhelloWorldMesonShared.so -Wl,--end-group
 
 # Test rules
 
@@ -89,7 +115,7 @@ build meson-uninstall: CUSTOM_COMMAND PHONY
 
 build uninstall: phony meson-uninstall
 
-build all: phony helloWorldMeson
+build all: phony helloWorldMeson libhelloWorldMesonStatic.a libhelloWorldMesonShared.so
 
 build clean: phony meson-clean
 

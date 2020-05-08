@@ -1,3 +1,8 @@
 # ninja log v5
 0	1026	1588704112790680058	helloWorldMeson@exe/helloWorld.cpp.o	beac14ba471a8c7a
 1027	1399	1588704113162685644	helloWorldMeson	d144a7304b4ba1fe
+0	813	1588913388064396173	build.ninja	319e949d604f0e6b
+3	884	1588913389048396171	helloWorldMesonShared@sha/helloWorld.cpp.o	7698e02f0ea4d37d
+2	894	1588913389048396171	helloWorldMesonStatic@sta/helloWorld.cpp.o	9c11a2294028f07
+895	913	1588913389076396171	libhelloWorldMesonStatic.a	f12d1d78ea607e8c
+885	1129	1588913389292396170	libhelloWorldMesonShared.so	c5cf785b90005cd5

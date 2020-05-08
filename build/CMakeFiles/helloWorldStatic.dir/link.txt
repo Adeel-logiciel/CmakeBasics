@@ -1,2 +1,0 @@
-/bin/ar qc libhelloWorldStatic.a  CMakeFiles/helloWorldStatic.dir/helloWorld.cpp.o
-/bin/ranlib libhelloWorldStatic.a
