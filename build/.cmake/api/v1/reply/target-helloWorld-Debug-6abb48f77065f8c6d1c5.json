@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "libhelloWorldShared.so"
+			"path" : "helloWorld"
 		}
 	],
 	"backtrace" : 1,
@@ -10,7 +10,7 @@
 	{
 		"commands" : 
 		[
-			"add_library"
+			"add_executable"
 		],
 		"files" : 
 		[
@@ -24,7 +24,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 6,
+				"line" : 21,
 				"parent" : 0
 			}
 		]
@@ -35,13 +35,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -fPIC  "
-				}
-			],
-			"defines" : 
-			[
-				{
-					"define" : "helloWorldShared_EXPORTS"
+					"fragment" : "-g  "
 				}
 			],
 			"language" : "CXX",
@@ -51,11 +45,15 @@
 			]
 		}
 	],
-	"id" : "helloWorldShared::@6890427a1f51a3e7e1df",
+	"id" : "helloWorld::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
 		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
 			{
 				"fragment" : "",
 				"role" : "flags"
@@ -63,8 +61,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "helloWorldShared",
-	"nameOnDisk" : "libhelloWorldShared.so",
+	"name" : "helloWorld",
+	"nameOnDisk" : "helloWorld",
 	"paths" : 
 	{
 		"build" : ".",
@@ -89,5 +87,5 @@
 			"sourceGroupIndex" : 0
 		}
 	],
-	"type" : "SHARED_LIBRARY"
+	"type" : "EXECUTABLE"
 }
