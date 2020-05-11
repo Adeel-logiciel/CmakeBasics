@@ -1,0 +1,11 @@
+Build started at 2020-05-11T14:50:22.160457
+Main binary: /usr/bin/python3
+Build Options: -Dbuildtype=debug -Dlayout=flat
+Python system: Linux
+The Meson build system
+Version: 0.54.1
+Source dir: /home/mahussain/Logiciel/Cmake/CmakeHelloWorld
+Build dir: /home/mahussain/Logiciel/Cmake/CmakeHelloWorld/build
+Build type: native build
+
+ERROR: No statements in code.

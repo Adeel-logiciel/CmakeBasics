@@ -1,0 +1,8 @@
+[
+  {
+    "directory": "/home/mahussain/Logiciel/Cmake/CmakeHelloWorld/meson",
+    "command": "c++ -IhelloWorldMeson@exe -I. -I.. -I/usr/local/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -DBOOST_ALL_NO_LIB -DBOOST_ALL_DYN_LINK -MD -MQ 'helloWorldMeson@exe/helloWorld.cpp.o' -MF 'helloWorldMeson@exe/helloWorld.cpp.o.d' -o 'helloWorldMeson@exe/helloWorld.cpp.o' -c ../helloWorld.cpp",
+    "file": "../helloWorld.cpp",
+    "output": "helloWorldMeson@exe/helloWorld.cpp.o"
+  }
+]

@@ -1,0 +1,121 @@
+Build started at 2020-05-11T14:55:56.721394
+Main binary: /usr/bin/python3
+Build Options: 
+Python system: Linux
+The Meson build system
+Version: 0.54.1
+Source dir: /home/mahussain/Logiciel/Cmake/CmakeHelloWorld
+Build dir: /home/mahussain/Logiciel/Cmake/CmakeHelloWorld/meson
+Build type: native build
+None of 'PKG_CONFIG_PATH' are defined in the environment, not changing global flags.
+None of 'PKG_CONFIG_PATH' are defined in the environment, not changing global flags.
+Project name: helloWorld
+Project version: undefined
+None of 'CXX' are defined in the environment, not changing global flags.
+None of 'CXXFLAGS' are defined in the environment, not changing global flags.
+None of 'LDFLAGS' are defined in the environment, not changing global flags.
+None of 'CPPFLAGS' are defined in the environment, not changing global flags.
+None of 'CXX_LD' are defined in the environment, not changing global flags.
+Sanity testing C++ compiler: c++
+Is cross compiler: False.
+Sanity check compiler command line: c++ /home/mahussain/Logiciel/Cmake/CmakeHelloWorld/meson/meson-private/sanitycheckcpp.cc -o /home/mahussain/Logiciel/Cmake/CmakeHelloWorld/meson/meson-private/sanitycheckcpp.exe -pipe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/mahussain/Logiciel/Cmake/CmakeHelloWorld/meson/meson-private/sanitycheckcpp.exe
+C++ compiler for the build machine: c++ (gcc 9.3.0 "c++ (Ubuntu 9.3.0-10ubuntu2) 9.3.0")
+C++ linker for the build machine: c++ ld.bfd 2.34
+None of 'AR' are defined in the environment, not changing global flags.
+None of 'CXX' are defined in the environment, not changing global flags.
+None of 'CXXFLAGS' are defined in the environment, not changing global flags.
+None of 'LDFLAGS' are defined in the environment, not changing global flags.
+None of 'CPPFLAGS' are defined in the environment, not changing global flags.
+None of 'CXX_LD' are defined in the environment, not changing global flags.
+Sanity testing C++ compiler: c++
+Is cross compiler: False.
+Sanity check compiler command line: c++ /home/mahussain/Logiciel/Cmake/CmakeHelloWorld/meson/meson-private/sanitycheckcpp.cc -o /home/mahussain/Logiciel/Cmake/CmakeHelloWorld/meson/meson-private/sanitycheckcpp.exe -pipe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/mahussain/Logiciel/Cmake/CmakeHelloWorld/meson/meson-private/sanitycheckcpp.exe
+C++ compiler for the host machine: c++ (gcc 9.3.0 "c++ (Ubuntu 9.3.0-10ubuntu2) 9.3.0")
+C++ linker for the host machine: c++ ld.bfd 2.34
+None of 'AR' are defined in the environment, not changing global flags.
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Target machine cpu family: x86_64
+Target machine cpu: x86_64
+Checking potential boost root /usr/include/c++
+Checking potential boost root /usr/include/x86_64-linux-gnu/c++
+Checking potential boost root /usr/include/c++/9
+Checking potential boost root /usr/lib/gcc/x86_64-linux-gnu/9
+Checking potential boost root /usr/local
+  - found boost 1.73.0 include dir: /usr/local/include
+  - filtered library list:
+    - <LIB: -M ------ ??? ? 1_73 boost_atomic                     /usr/local/lib/libboost_atomic.so.1.73.0>
+    - <LIB: -M ------ ??? ? 1_73 boost_chrono                     /usr/local/lib/libboost_chrono.so.1.73.0>
+    - <LIB: -M ------ ??? ? 1_73 boost_container                  /usr/local/lib/libboost_container.so.1.73.0>
+    - <LIB: -M ------ ??? ? 1_73 boost_context                    /usr/local/lib/libboost_context.so.1.73.0>
+    - <LIB: -M ------ ??? ? 1_73 boost_contract                   /usr/local/lib/libboost_contract.so.1.73.0>
+    - <LIB: -M ------ ??? ? 1_73 boost_coroutine                  /usr/local/lib/libboost_coroutine.so.1.73.0>
+    - <LIB: -M ------ ??? ? 1_73 boost_date_time                  /usr/local/lib/libboost_date_time.so.1.73.0>
+    - <LIB: -M ------ ??? ? 1_73 boost_fiber                      /usr/local/lib/libboost_fiber.so.1.73.0>
+    - <LIB: -M ------ ??? ? 1_73 boost_filesystem                 /usr/local/lib/libboost_filesystem.so.1.73.0>
+    - <LIB: -M ------ ??? ? 1_73 boost_graph                      /usr/local/lib/libboost_graph.so.1.73.0>
+    - <LIB: -M ------ ??? ? 1_73 boost_iostreams                  /usr/local/lib/libboost_iostreams.so.1.73.0>
+    - <LIB: -M ------ ??? ? 1_73 boost_locale                     /usr/local/lib/libboost_locale.so.1.73.0>
+    - <LIB: -M ------ ??? ? 1_73 boost_log                        /usr/local/lib/libboost_log.so.1.73.0>
+    - <LIB: -M ------ ??? ? 1_73 boost_log_setup                  /usr/local/lib/libboost_log_setup.so.1.73.0>
+    - <LIB: -M ------ ??? ? 1_73 boost_math_c99                   /usr/local/lib/libboost_math_c99.so.1.73.0>
+    - <LIB: -M ------ ??? ? 1_73 boost_math_c99f                  /usr/local/lib/libboost_math_c99f.so.1.73.0>
+    - <LIB: -M ------ ??? ? 1_73 boost_math_c99l                  /usr/local/lib/libboost_math_c99l.so.1.73.0>
+    - <LIB: -M ------ ??? ? 1_73 boost_math_tr1                   /usr/local/lib/libboost_math_tr1.so.1.73.0>
+    - <LIB: -M ------ ??? ? 1_73 boost_math_tr1f                  /usr/local/lib/libboost_math_tr1f.so.1.73.0>
+    - <LIB: -M ------ ??? ? 1_73 boost_math_tr1l                  /usr/local/lib/libboost_math_tr1l.so.1.73.0>
+    - <LIB: -M ------ ??? ? 1_73 boost_nowide                     /usr/local/lib/libboost_nowide.so.1.73.0>
+    - <LIB: -M ------ ??? ? 1_73 boost_prg_exec_monitor           /usr/local/lib/libboost_prg_exec_monitor.so.1.73.0>
+    - <LIB: -M ------ ??? ? 1_73 boost_program_options            /usr/local/lib/libboost_program_options.so.1.73.0>
+    - <LIB: -M ------ ??? ? 1_73 boost_random                     /usr/local/lib/libboost_random.so.1.73.0>
+    - <LIB: -M ------ ??? ? 1_73 boost_regex                      /usr/local/lib/libboost_regex.so.1.73.0>
+    - <LIB: -M ------ ??? ? 1_73 boost_serialization              /usr/local/lib/libboost_serialization.so.1.73.0>
+    - <LIB: -M ------ ??? ? 1_73 boost_stacktrace_addr2line       /usr/local/lib/libboost_stacktrace_addr2line.so.1.73.0>
+    - <LIB: -M ------ ??? ? 1_73 boost_stacktrace_backtrace       /usr/local/lib/libboost_stacktrace_backtrace.so.1.73.0>
+    - <LIB: -M ------ ??? ? 1_73 boost_stacktrace_basic           /usr/local/lib/libboost_stacktrace_basic.so.1.73.0>
+    - <LIB: -M ------ ??? ? 1_73 boost_stacktrace_noop            /usr/local/lib/libboost_stacktrace_noop.so.1.73.0>
+    - <LIB: -M ------ ??? ? 1_73 boost_system                     /usr/local/lib/libboost_system.so.1.73.0>
+    - <LIB: -M ------ ??? ? 1_73 boost_thread                     /usr/local/lib/libboost_thread.so.1.73.0>
+    - <LIB: -M ------ ??? ? 1_73 boost_timer                      /usr/local/lib/libboost_timer.so.1.73.0>
+    - <LIB: -M ------ ??? ? 1_73 boost_type_erasure               /usr/local/lib/libboost_type_erasure.so.1.73.0>
+    - <LIB: -M ------ ??? ? 1_73 boost_unit_test_framework        /usr/local/lib/libboost_unit_test_framework.so.1.73.0>
+    - <LIB: -M ------ ??? ? 1_73 boost_wave                       /usr/local/lib/libboost_wave.so.1.73.0>
+    - <LIB: -M ------ ??? ? 1_73 boost_wserialization             /usr/local/lib/libboost_wserialization.so.1.73.0>
+  - found:
+  - final compile args: ['-I/usr/local/include', '-DBOOST_ALL_NO_LIB', '-DBOOST_ALL_DYN_LINK']
+  - final link args:    []
+Run-time dependency Boost found: YES 1.73.0 (/usr/local)
+Build targets in project: 1
+
+Found ninja-1.10.0 at /usr/bin/ninja
+Running compile:
+Working directory:  /home/mahussain/Logiciel/Cmake/CmakeHelloWorld/meson/meson-private/tmpr1amhtc7
+Command line:  c++ /home/mahussain/Logiciel/Cmake/CmakeHelloWorld/meson/meson-private/tmpr1amhtc7/testfile.cpp -o /home/mahussain/Logiciel/Cmake/CmakeHelloWorld/meson/meson-private/tmpr1amhtc7/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ install: /usr/lib/gcc/x86_64-linux-gnu/9/
+programs: =/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/bin/
+libraries: =/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/9/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/9/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+
+Compiler stderr:
+ 
+None of 'STRIP' are defined in the environment, not changing global flags.
+None of 'STRIP' are defined in the environment, not changing global flags.
